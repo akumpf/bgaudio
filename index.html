@@ -105,7 +105,7 @@ $(document).ready(function(){
   //document.title = "Silent";
   var w = $(window).width();
   // --
-  var a = "<div class='topl'><b>bg</b> - Background audio for work &amp; relaxation.</div>";
+  var a = "<div class='topl'><b>bg</b> - Background audio for work &amp; relaxation. <a href='https://github.com/akumpf/bgaudio'>Read more...</a></div>";
   var b = "<div class='topshare'><span>tweet</span> what you're working on.</div>";
   // --
   $("#header").html(((w>=768)?a:"<div class='topl'><b>bg</b></div>")+b);
@@ -221,11 +221,13 @@ a, a:visited {
   left: 10px;
   top: 0;
   bottom: 0;
-  right: 50%;
+  right: 250px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.topl a {color: #000;}
+.topl a:hover {text-decoration: underline;}
 .topshare {
   position: absolute;
   right: 10px;
